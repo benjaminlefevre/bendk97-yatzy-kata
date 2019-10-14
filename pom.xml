@@ -11,10 +11,39 @@
   <properties>
     <junit.version>4.12</junit.version>
     <assertJ.version>3.13.2</assertJ.version>
+    <commons-lang3.version>3.9</commons-lang3.version>
+    <guava.version>28.1-jre</guava.version>
+    <commons-collections4.version>4.4</commons-collections4.version>
+    <spring-core.version>5.2.0.RELEASE</spring-core.version>
   </properties>
 
 
   <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring-core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring-core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>${guava.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-collections4</artifactId>
+      <version>${commons-collections4.version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -27,7 +56,11 @@
       <version>${assertJ.version}</version>
       <scope>test</scope>
     </dependency>
-
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${spring-core.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
